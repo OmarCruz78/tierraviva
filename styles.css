@@ -1,5 +1,7 @@
 :root {
   --color-principal: orange; /* azul oscuro corporativo */
+
+  --color-principal2: #d3cecd; plomo
   --color-secundario: #ffffff; /* blanco para textos y fondos */
   --color-acento: #f7a600; /* naranja suave (resaltados) */
   --fuente-principal: 'Open Sans', sans-serif;
@@ -168,7 +170,7 @@ padding: .5rem .5rem;
 
 /* ===== Navegación ===== */
 .navbar {
-  background-color: var(--color-principal);
+  background-color: var(--color-principal2);
   color: var(--color-secundario);
   padding: calc(var(--espaciado-base) * 0.75) var(--espaciado-base);
 }
