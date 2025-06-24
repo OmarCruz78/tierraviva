@@ -1,0 +1,278 @@
+:root {
+  --color-principal: orange; /* azul oscuro corporativo */
+  --color-secundario: #ffffff; /* blanco para textos y fondos */
+  --color-acento: #f7a600; /* naranja suave (resaltados) */
+  --fuente-principal: 'Open Sans', sans-serif;
+  --espaciado-base: 16px;
+  --radio-bordes: 4px;
+}
+
+/* ===== Reset y base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--fuente-principal);
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* ===== Tipografía ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fuente-principal);
+  font-weight: 600;
+  color: var(--color-principal);
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--espaciado-base);
+}
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: calc(var(--espaciado-base) / 2);
+}
+
+
+body {
+            margin: 0;
+            background-color: #f8f8f8;
+            padding-top: 3em;
+        }
+
+        /* Barra de navegación fija */
+        .navbar {
+            background-color: #fff;
+            color: #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #555;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: none; /* Oculto por defecto en pantallas pequeñas */
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #555;
+        }
+
+        .menu-toggle {
+            display: block; /* Visible en pantallas pequeñas */
+            font-size: 1.5em;
+            color: #555;
+            cursor: pointer;
+        }
+
+        /* Estilos para pantallas más grandes */
+        @media (min-width: 768px) {
+            .menu-toggle {
+                display: none; /* Oculto en pantallas más grandes */
+            }
+
+            .nav-links {
+                display: flex; /* Visible en pantallas más grandes */
+            }
+        }
+
+        /* Contenido principal */
+        .hero {
+            background-color: #e9ecef;
+            padding: 4rem 20px 1rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .services {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .service-card {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Pie de página */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+section{
+
+margin: .5rem .5rem;
+
+
+padding: .5rem .5rem;
+    
+    
+}
+
+
+.procedimiento{
+    
+    margin: 0 .1rem 1rem .1rem;
+    
+    background-color: #Fff9ff;
+}
+
+.img2{
+    
+    height: 100px;
+    
+    width: 100px;
+}
+
+
+/* ===== Navegación ===== */
+.navbar {
+  background-color: var(--color-principal);
+  color: var(--color-secundario);
+  padding: calc(var(--espaciado-base) * 0.75) var(--espaciado-base);
+}
+.navbar a {
+  color: var(--color-secundario);
+  margin-right: var(--espaciado-base);
+  text-decoration: none;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Cabecero / Banner ===== */
+.header-banner {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: var(--color-secundario);
+  padding: calc(var(--espaciado-base) * 5) var(--espaciado-base);
+  text-align: center;
+}
+.header-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+.header-banner h1 {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Botones / Llamadas a acción ===== */
+.btn {
+  display: inline-block;
+  background-color: var(--color-acento);
+  color: var(--color-secundario);
+  padding: var(--espaciado-base) calc(var(--espaciado-base)*2);
+  border: none;
+  border-radius: var(--radio-bordes);
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: darken(var(--color-acento), 10%);
+}
+
+/* ===== Secciones de contenido ===== */
+.section {
+  padding: calc(var(--espaciado-base)*2) var(--espaciado-base);
+}
+.section.bg-white {
+  background-color: #fff;
+}
+.section.bg-light {
+  background-color: #f2f2f2;
+}
+
+/* ===== Cards de destino ===== */
+.card-destino {
+  background-color: #fff;
+  border-radius: var(--radio-bordes);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: var(--espaciado-base);
+  transition: transform 0.3s ease;
+}
+.card-destino:hover {
+  transform: translateY(-5px);
+}
+.card-destino img {
+  width: 100%;
+  height: auto;
+}
+.card-destino .info {
+  padding: var(--espaciado-base);
+}
+.card-destino h4 {
+  margin-top: 0;
+}
+
+/* ===== Pulsador “reserva” fijo ===== */
+.reserva-fija {
+  position: fixed;
+  bottom: var(--espaciado-base);
+  right: var(--espaciado-base);
+  z-index: 1000;
+}
+
+/* ===== Pie de página ===== */
+.footer {
+  background-color: var(--color-principal);
+  color: var(--color-secundario);
+  padding: calc(var(--espaciado-base)*2);
+  text-align: center;
+}
+.footer a {
+  color: var(--color-acento);
+}
+
+/* ===== Responsividad ===== */
+@media (max-width: 768px) {
+  .navbar { text-align: center; }
+  .navbar a { display: block; margin: var(--espaciado-base) 0; }
+  .card-group { display: block; }
+}
